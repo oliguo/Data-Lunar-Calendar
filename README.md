@@ -6,4 +6,14 @@ A chinese lunar data with MSSQL
  ```
  https://www.cnblogs.com/accumulater/articles/6807248.html
  ```
- The Data includes 1999 to 2049.
+ The Sample Data just includes 1999 to 2049.
+ 
+ To get specify lunar date to run the function: 
+ ```sql
+ SELECT dbo.fn_GetLunar('2021-12-30') Lunar;
+ ```
+ 
+ To get the lunar date of whole year to run the procdure:
+ ```sql
+ EXEC proc_calendar 2021;
+ ```
